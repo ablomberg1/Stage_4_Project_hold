@@ -24,11 +24,14 @@ class Handler(webapp2.RequestHandler):
     self.write(self.render_str(template, **kw))
 
 class MainPage(Handler):
+   def write_form(self, error="", month="", day="", year=""):
+    #dictionary that we pass into the form
+    self.response.out.write(form % {"error": error,  
+      "month": month, "day": day, "year": year})
+
   def get(self):
-    user_month = self.request.get('month')
-    user_day = self.request.get('day')
-    user_year = self.request.get('year')
     self.render("form.html", user_month=user_month, user_day=user_day, user_year=user_year)
+
   def post(self):
     user_month = self.request.get('month')
     user_day = self.request.get('day')
@@ -39,8 +42,9 @@ class MainPage(Handler):
     year = valid_year(user_year)
   
     if not (month and day and year):
-      self.response.out.write("That doesn't look valid to me, friend.")
-            #user_month, user_day, user_year)
+      self.write_form("That doesn't look valid to me, friend.",
+            user_month, user_day, user_year)
+
     else:
       self.response.out.write("Thanks! That's a totally valid day!")
 
