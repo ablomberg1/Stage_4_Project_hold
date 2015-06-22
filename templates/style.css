@@ -1,0 +1,48 @@
+body {
+	font-family:sans-serif;
+  	width:70%;  margin:0 auto;
+}
+.title {
+	text-decoration:underline;
+	text-align: center;
+  	font-weight: bold;
+  	font-size: 25px;
+}
+.stage {
+	text-align: center;
+	color:black;
+	background-color: green;
+	border-radius: 20px;
+	padding: 10px;
+	font-weight: bold;
+}
+.lesson {
+	text-align: center;
+	color:white;
+	background-color: green;
+	border-radius: 20px;
+	padding: 10px;
+	font-weight: bold;
+}
+.concept {
+	background-color: lightyellow;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 20px;	
+  	color: black;
+  	text-align: left;
+}
+.concept-title {
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	margin: 8px;
+}
+.concept-description {
+	font-weight: lighter;
+	margin: 6px;
+}
+.form {
+	font-weight: lighter;
+	margin: 6px;
+}

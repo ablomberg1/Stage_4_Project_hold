@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to Programming Notes</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+  <div class="navigation-bar">
+    <ul>
+      <li><a href="#lesson-1">Stage 1</a></li>
+      <li><a href="#lesson-2">Stage 2</a></li>
+      <li><a href="#lesson-3">Stage 3</a></li>
+      <li><a href="#lesson-4">Stage 4</a></li>
+    </ul>
+  </div>
+</header>
+<body>
+  <div class="title">
+    <h1 id="section-1">Introduction to Programming Notes</h1>
+  </div>
+  <div class="stage">
+    <h1 id="lesson-1">Stage 1: The Basics of the Web and HTML</h1>
+      <div class="lesson">
+        <h2>Lesson 1: Webpages, Documents, and Structures</h2>
+        <div class= "concept">
+          <h2 class="concept-title">Basics of the Web and HTML</h2>
+            <!--http://en.wikipedia.org/wiki/HTML-->
+            <div class= "concept-description"><p>HTML <em>hyper text markup language</em> is a computer language used to create web pages on the Internet.  The Internet uses HTTP to transmit data to and from servers.  HTML is the heart of the web and includes documents is made up of text content (what you see), markup (what content looks like), references to images and videos, other documents and links to other pages.</p><p>HTML is made up of elements.  An element consists of &lt;opening tags&gt; content and &lt;closing tags&gt;. Remember, computers are not stupid they are sensitive.  Computers do exactly as the computer programmers tell them.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">HTML Attributes</h2>
+            <div class= "concept-description"><p>HTML Attributes are within a tag and a tag may have multiple attributes &lt;tag attr="value"&gt;contents&lt;/tag&gt;.  The attribute &lt;a&gt; is an anchor tag. Anchors are for making links. href is an attribute that indictates the URL being linked. Example &lt;a href=”www.reddit.com”&gt; derp&lt;/a&gt; creates <a href=”www.reddit.com”> derp</a> on the web page.  Selecting the link sends the user to the url www.reddit.com.</p><p>Another attribute is &lt;img&gt; which is used for including images, example: &lt;img svc=”url” alt=”text”&gt;.  The alt=”text” piece is required for broken requests.  The alt attribute is also there for those who are blind.  Example: <img src=http://www.udacity.com/cs2e53x/hipmunk.pgn alt="hipmonk!">.  The img attribute does not require a closing tag because it has no content.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Whitespace</h2>
+              <!--http://en.wikipedia.org/wiki/Span_and_div-->
+            <div class= "concept-description"><p>There are Inline and Block elements.   br = break in the line is an Inline element, p = paragraph which is used around the text and is a Block element. Text can be on one or multiple lines and is dependent on which type of tag is used.</p><b>Inline:</b> &lt;br&gt;, &lt;em&gt; <em>(italic)</em>, &lt;img&gt;, &lt;a&gt;, &lt;strong&gt;<br><b>Block:</b> &lt;span&gt;, &lt;p&gt;, &lt;div&gt;, &lt;form&gt;<br><b>Container Elements:</b> store stuff inside them<br><p> &lt;Span&gt; represents an inline element.  Span is like words within a sentence. <span>All text remains in one line.</span> But when changed to div the content is now block.</p>
+            </div>
+        </div>
+        <div class= "concept">
+              <h2 class="concept-title">Structure of an HTML Document</h2>
+              <div class= "concept-description"><p>An HTML Document has a basic structure with a head which includes the meta-data, java script, css and title.  The body of the document contains all the data and images, what is considered the insteresting stuff, the contents of the document. These two sections are found within the opening and closing html tags.</p><img src="images/html-structure.jpg" alt="html structure"><p>&lt;!DOCTYPE HTML&gt;  designates what kind of HTML is used and is listed before the opening html.</p>
+              </div>
+          </div>
+        </div>
+        <div class= "lesson">
+            <h2>Lesson 2: Create a Structured Document with HTML</h2>
+          <div class= "concept">
+            <h2 class="concept-title">HTML, CSS and Java</h2>
+            <div class= "concept-description"><p>HTML is the structure; syntax, rules of the page.  CSS is the style, how it looks. Java is the interactive components.  HTML controls the structure of a page using DOM, a tree like structure.  HTML files are like the structure of a house.  When looking at the structure you are determining where the walls go, what size are the rooms, where does the kitchen go?  CSS is the style of the document, how things look. In the house example this would be the pictures on the wall, colors of the floor and walls.  Java script files are interactive components like a garage door opener and tv remote.  These change some element of your house.</p><p>There are rules for how a website behaves and many web tools to help you build websites. For example Wikipedia's inner structure can be viewed using Google Chrome. DevTools shows the structure of the page as the browser interprets it. Every element in a structure is a rectangle.  If you go deep enough into a structure you will find the same data that is on the web page. the sideways triangle is an html element that could be text or another element. Web pages include images and text.</p><p>The style panel is on the right. When a line on the left side is selected the CSS style is presented on the right. The web browser knows how to display the the HTML file, data, and images by following the syntax and rules of the DOM</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">DOM</h2>
+            <!--http://en.wikipedia.org/wiki/Document_Object_Model-->
+            <div class= "concept-description"><p>“DOM” (document object model) is the tree-like structure of a web page, a branching structure.  DOM is a standard convention for representing or interacting with objects in HTML. HTML is made up of tags in elements which make up the tree.  These elements are nested creating the branches. This is how HTML classifies page contents, tells the browser which part is text or image.</p><p>To tie structure and style together the HTML document can provide the browser with info on what style to use and where to get it.  There are specific rules for how these elements work. To define style use the CSS <em>Cascading Style Sheet</em> language.  CSS allows you to use a specific syntax and rules to change how the text looks on the web, the borders, position, font etc.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Boxes, Boxes Everywhere</h2>
+            <div class= "concept-description"><p>In the shapes demo, right click on a web page>inspect element to view the HTML and CSS.  Everything is in rectangles.  If you uncheck the border radius circles become a square.</p><p>“Boxify” your design. Start with big boxes.  Don’t worry about the text or images initially, work from big to small.  From the boxes create HTML.  Example used was My Favorite Apps, with an image and text.  Class attributes are labels on boxes that remind you of what is inside. These can have several labels.  Use descriptive labels to help remind you of what the box is for.  For instance the top box could be “title”.</p>
+            </div>
+          </div>
+      </div>
+        <div class= "lesson">
+          <h2>Lesson 3: Adding CSS Style to HTML Structure</h2>
+          <div class= "concept">
+            <h2 class="concept-title">Style</h2>
+            <div class= "concept-description"><p>The structure created by My App (example in class) does not include style.  Add &lt;!DOCTYPE html&gt;, then add &lt;html&gt; to indicate we are using html.  Add &lt;head&gt; to add style &lt;link rel=”stylesheet” type=”text/css” href=”style.css”&gt; then close tag for the &lt;/head&gt;.  The &lt;body&gt; tags include the code right before the end of lesson 2 for My App.  Now add style to the style.css file.  “.description {color:red;}”. Save the file and refresh browser.  You will see that the text in the description box turned red.</p><p>CSS stands for Cascading Style Sheets. Cascading means the most specific rule is applied to control the style of HTML documents.  The rule that best describes the element is used.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Avoid Repetition</h2>
+            <div class= "concept-description"><p>Avoiding Repetition is important to maintain consistency throughout the HTML file.  The style can more easily be maintained and fewer errors are made.  Repetition can also make editing difficult. 
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Inheritance</h2>
+            <div class= "concept-description"><p>Inheritance is where the key feature in CSS properties are applied to an element and all its descendants.  Text related properties such as color, font, letter/line spacing (and others) can be inherited, but not box related properties such as background, border, display, float & clear.  Inheritance prevents repetition, and allows developers to write less CSS.  Also enhances faster loading of web pages and clients save money on bandwidth.</p><p>Instead of memorizing all attributes and tags utilize the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference Tool</a> which lists styles of HTML elements. To reduce repetition a rule can be setup to apply to every h1 element for example, or to a class. CSS can also be included in the head of your HTML, this is good for small projects.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Separate CSS File</h2>
+            <div class= "concept-description"><p>For larger projects link the HTML file to a separate CSS file.  HTML is the main.html file, CSS is the main.css file.  Add a &lt;head&gt; tag to the top of the HTML then add a &lt;link&gt; tag inside the &lt;head&gt; element. Reminder: Link is a void tag: there is no closing tag needed.  Add the following attributes to &lt;link&gt;</p><p><b>ref</b> = <em>"stylesheet"</em><br><b>type</b>= <em>"text/css"</em><br><b>href</b>= <em>"main.css"</em><br></p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">The Box Model</h2>
+            <div class= "concept-description"><p>HTML elements are boxes and each box has four components: margin, border, padding and content.  Summing up the last three; border, padding and content make up the element width. Margin is not included.  'box-size:border-box' css code creates the calculation of the border size or set size of the border.</p><p>It can be difficult to get the box sizes just right. There are two techniques to help with sizing issues:</p>1. Use a percentage instead of pixels for size.<br> 2. Set box sizing attribute to border-box for every element<br><p>Add browser specific prefixes before style definition.  The size of the boxes are set in pixels.  These can also be done in percentages.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Box Positioning</h2>
+            <div class= "concept-description"><p>Flex-box layout is an efficient way to layout space in a container or box. Because divs are block elements they take up the entire width of the page by default.  By adding the flex rule display CSS will override this behavior and let the divs appear next to each other.  In the My App example the image is up against the left border and text directly to the right due to flex-box.</p>     
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Code, Test, Refine</h2>
+            <div class= "concept-description"><p>To begin get a structure of the design and visually 'boxify' the page.  Create tags and headings, size the boxes, and position everything on the screen. Once a general layout is complete then begin working on the smaller details.</p><p>Divide and conquer, look for natural boxes.  Look for repeated styles and semantic elements then begin writing your HTML.  Apply styles, again big to small, then go back and fix any problems.  Developer tools are extremely helpful, allowing the developer to change things on the fly.  Make sure the mockup looks the same as the finished product. Look at the margin size and get as close to the mockup as possible.</p><p> Validation of code can be done using the <a href="http://validator.w3.org/#validate_by_input" target="_blank">Markup Validation Service</a> and <a href="http://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">CSS Validation Service</a>. These services will check the code for errors and provide warnings.
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="stage">
+    <h1 id="lesson-2">Stage 2: Automate Your Web Page</h1>
+      <div class= "lesson">
+          <h2>Lesson 1: Introduction to "Serious" Programming</h2>
+          <div class= "concept">
+            <h2 class="concept-title">Telling Computers What to Do</h2>
+            <div class= "concept-description"><p>Computer science includes solving problems by breaking them into smaller pieces then describing the sequence of steps to solve each piece and those steps can be executed by a computer to get the best result for the given query.</p><p>There are three pieces to a search engine: find the data, build an index and rank pages. Find data is done by crawling web pages.  The index is built to respond quickly to search queries and rank pages to get the best results for a given query.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Getting Started: Programming</h2>
+            <div class= "concept-description"><p><b>Programs</b><br>Computer programs follow instructions. Examples would include web browsers, Python interpreter, an application on your phone, code written to complete a specific task like print "hello". Web Crawler searches the World Wide Web and produces a list of web pages, starting with a seed page, a link which is really a special kind of text on that web page. Within a web page are more links to more pages, and this continues building a collection of data.</p><p><b>Programming</b><br>Python is a high level language.  The Python program is an interpreter that runs programs and interprets them.  Programming is the core of computer sciences.  Most computers are built to do one thing but without programming a computer cannot do anything.  Computers <b>CAN</b> be programmed to do anything you can imagine by following a precise sequence of steps.  The program provides a precise set of steps which tells the computer exactly what to do.</p><p><b>Interpreter vs Compiler</b><br>A compiler does all the work first then runs the program.  An interpreter does everything at once</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Getting Started with Python</h2>
+            <!--http://en.wikipedia.org/wiki/Python_(programming_language)-->
+            <div class= "concept-description"><p>Python can be run directly using a web browser.  Type the code, click run and a Python interpreter converts your code into a set of instructions for the computer to execute. These results are shown at the bottom of the screen. </p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Grammar and Ambiguity</h2>
+            <div class= "concept-description"><p>Programming languages which have strict rules, are used instead of English because the English language is ambiguous. The example of biweekly was used.  Biweekly has several definitions which would cause an error when processed with a computer.  Errors indicate the structure of the code is inconsistent with the programming language rules.</p><p><b>Backus-Naer Form</b> is a style of writing written by John Backus, the Fortran lead designer at IBM. Backus-Naer Form is used to create a precise programming language.  The structure is &lt;non-terminal&gt; --> replacement.</p><p><b>English Grammar:</b><br>Sentence --> Subject Verb Object<br>Subject --> Noun<br>Object -->Noun<br>Verb --> eat, like (terminal)<br>Noun --> I Python cookies (terminal)</p><img src="images/Backus-Naur_Form.png" alt="terminal diagram">
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Expressions</h2>
+            <div class= "concept-description"><p>First lesson was to enter print 3, select run and the interpreter provided the result of 3. This is A Python expression.  Another example is <em>print 3*7*4*7</em> (adding spaces is ok to make it more legible), results in 588. Parentheses can be used to change the expression value: <em>print 52*3+12*9</em> the result is 264 and <em>print 52*(3+12)*9</em> the result is 7020. An invalid express would be <em>print 3 + 2 +</em> where there is an operator at the end, there must be a number.</p>   
+            </div>
+          </div>
+      </div>
+      <div class= "lesson">
+          <h2>Lesson 2: Variables and Strings</h2>
+          <div class= "concept">
+            <h2 class="concept-title">Variables</h2>
+            <div class= "concept-description"><p>Variables make programs simpler to understand.  The program uses the same expression changing the value of the variable to compute different things.  This is much simpler than searching thru the code for each instance. Programmers create a name and use that name to refer to a variable, this is called an assignment statement: Name = Expression.  An expression is assigned to a name using an assignment statement.  The same expression can have different meanings at different times depending on when it is evaluated.  A name can be any sequence of letters and numbers as long as it starts with a letter or underscore.</p><p>Variables are useful because they are easy to remember thus improving code readability, their values are easily changed and variables are a simple way to store values.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Is = really equal?</h2>
+            <div class= "concept-description"><p>'=' does not mean the same thing as 'equal'.  '=' is an assignment.  A value (expression) is assigned to a name, it takes the value of the expression.  In the equation 2 + 3 = 5 the sum of the left side is the same as the value on the right, this is an equation. My_name = 'Audrey' is an assignment. The expression on the right is assigned to the name on the left side of the '='.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Strings</h2>
+            <div class= "concept-description"><p>Strings are a sequence of characters surrounded by quotes.  This can be double or single quotes, but must be the same on both ends. Strings cannot be added to an integer but may be multiplied by one.</p><br><img src="images/String_example.png" alt="Example of string code"><p>The number 2 is handled differently than the string "2". Code 2 + 2 produces a result of 4 while "2" + "2" produces "22".</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Indexing Strings</h2>
+            <div class= "concept-description"><p>We can extract subsequences from strings.  This cannot be done with variables. &lt;string&gt; [&lt;expression&gt;], the expression is a number.  The characters in a string are indexed from zero.  The first letter is zero, 2nd is 1, etc.  A subsequence of characters in a string begin from position start and end with position stop-1.  &lt;string&gt; [&lt;expression&gt;:&lt;expression&gt;]</p><br><img src="images/Index_example.png" alt="Examples of Indexes">
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Finding Strings in Strings</h2>
+            <!--http://wisdomquotes.org/famous.php-->
+            <div class= "concept-description"><p>Provides a way to find a sub string within a large string; find is a method. Finding strings in strings &lt;string&gt;.find(&lt;string&gt;) will provide the first occurrence in the search string where the target string appears. The parameter is the string and/or number inside the parenthesis of a find statement. A -1 result indicates the target string is not found and case does matter.</p><br><b>Example: quote by Anitole France</b><br>france = 'An education is not how much you have committed to memory, or even how much you know. It is being able to differentiate between what you do know and what you do not know.'<br><img src="images/find_example.png" alt="Examples of Find">
+            </div>
+          </div>
+      </div>
+      <div class= "lesson">
+          <h2>Lesson 3: Input -&gt;Function -&gt; Output</h2>
+          <div class= "concept">
+            <h2 class="concept-title">Using Procedures</h2>
+            <!--http://www.webopedia.com/TERM/F/function.html-->
+            <!--http://www.bogotobogo.com/python/python_functions_def.php-->
+            <div class= "concept-description"><p>A function is a procedure that performs a task or routine and returns a value.  There are two types of functions, built in and those you can create yourself.  Find, which was used in the prior lesson, is a built in function.</p><br><img src="images/function_format.png" alt="Format of a Function"><p>All functions begin with def (define).  The def header is followed by a function name and indicates the number of input values to be expected.</p><br><img src="images/function_example.png" alt="Example Function"><p>The function is used, or executes a return statement when a procedure is called.  The interpreter jumps int to the body of the procedure to run the code and will assign the string to the parameters, the values are passed in as inputs.  'a' is now the value passed in, which is 'audacity'.   Return jumps back to where the procedure was called and provides the output or value for name.  Without the return statement nothing is returned, the result is None.</p><br><img src="images/function_results.png" alt="Results of Function"><p>Functions are valuable because they reduce repetition in code because they are reusable.</p>
+            </div>
+          </div>
+      </div>
+      <div class= "lesson">
+          <h2>Lesson 4: Decisions and Repetitions</h2>
+          <div class= "concept">
+            <h2 class="concept-title">Making Decisions</h2>
+            <div class= "concept-description"><p>When making decisions the following format is used:</p><br><img src="images/decision_making.png" alt="Decision Making format"><p>The boolean value is either True or False when evaluating the equation.  For instance 3&gt;2 returns True and 3&lt;2 returns False because 3 is not less than 2.</p><p>The double equal == is used when making decisions because a single equal means assignment.  name = 'Fred', the word 'Fred' is assigned to name.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">If and While</h2>
+            <div class= "concept-description"><p>If statements control which code is executed and when.  This code can be expanded to use else.  When the if statement is true the block of code beneath the if statement is executed. When the if statement is false the else statement is processed next.<br><img src="images/if_else_example.png" alt="Example of if and else"><p>While loops perform the same task many times.  This could be a set number of times or until the computer runs out of power or memory.<br><img src="images/compare_if_while.png" alt="Compare run times of If and While"><br><br><b>While Example</b><br><img src="images/while_example.png" alt="Compare run times of If and While"></p><p><b>Break</b><br>Break statements will stop the loop even when the condition is true. A break Test expression checks whether it is time to take a break or jump out of the while loop. If the break test is false, the system continues on thru the while loop, if true the system will stop executing the while loop and continue with the code after the while loop.</p><br><img src="images/break_example.png" alt="Example of Break">
+            </div>
+          </div>
+      </div>
+      <div class= "lesson">
+          <h2>Lesson 5: Structured Data: Lists and For Loops</h2>
+          <div class= "concept">
+            <h2 class="concept-title">Structured Data</h2>
+            <!--http://www.webopedia.com/TERM/S/structured_data.html-->
+            <div class= "concept-description"><p>Structured data is organized in a fixed field. A string or list is structured data. Strings are a sequence of variables like a name or word.  A list is a sequence of anything, letters, words, numbers or characters.  Lists are more powerful than strings.</p><p>Nested Lists are lists within lists, for example mixed_up['apple',3,'oranges',2,['alpha','beta']].  ['alpha','beta'] is nested within the mixed_up list.</p>
+            </div>
+        </div>
+          <div class= "concept">
+            <h2 class="concept-title">Mutation and Aliases</h2>
+            <div class= "concept-description"><p><b>Mutable</b><br>Lists are mutable meaning they may be changed after being created. The string is not modified it actually changes the value of the string by creating a new string.  One thing to be cautious of is other variables that refer to that object.</p><p><b>Alias</b><br>Aliases have 2 different ways to refer to the same object. The example provided in class was James Bond is also known as '007'.  Whatever happens to that person referred to as James Bond also happens to '007', the agent is the spy.</p><p><b>Note:</b> you cannot mutate the value of a number.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Append and '+'</h2>
+            <div class= "concept-description"><p><b>Append</b><br>Append is a method, like a procedure, used similarly to the way we use find.  &lt;list&gt;.append(&lt;element&gt;). the object is appended in or added to the list.</p><p><b>'+'</b><br>'+' is similar to concatenation, adding the lists together to create one list.</p><p><b>len</b><br>len - length, works for any object that is a collection of things. len counts the number of elements in a list.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">For Loop</h2>
+            <div class= "concept-description"><p>Loops are a collection of things.  The for loop is a simpler way to cycle thru all the elements in a list than to use a while loop with len.  It is used when you have a section of code you want to repeat n number of times.  For loop format is:</p><br> &lt;name&gt; in &lt;list&gt;:<br><pre>    &lt;block&gt;</pre>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Index and In</h2>
+            <div class= "concept-description"><p><b>Index</b><br>Index is a built in procedure. &lt;list&gt;.index(&lt;value&gt;) Index returns the first positon where &lt;value&gt; is found in &lt;list&gt; but will not provide a -1 if the value is not found, it will result in an error i.e.'3 is not in list' if looking for the value of 3.</p><p><br><b>In</b><br>In is another way to find a value within a list. &lt;value&gt;in&lt;list&gt;.  If the &lt;value&gt; is in the &lt;list&gt;, output is True, otherwise the output is False.  Another way to use in is &lt;value&gt;not in&lt;list&gt; which is the same as not &lt;value&gt;in&lt;list&gt; but is more in line with how it would be said in English.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="stage">
+    <h1 id="lesson-3">Stage 3: Abstraction</h1>
+      <div class= "lesson">
+          <h2>Object Oriented Programming</h2>
+          <!--http://en.wikipedia.org/wiki/Object-oriented_programming-->
+          <!--http://www.merriam-webster.com/dictionary/object-oriented%20programming-->
+          <!--https://docs.python.org/2/tutorial/modules.html?highlight=module-->
+          <div class= "concept">
+            <h2 class="concept-title">What is Object Oriented Programming?</h2>
+            <div class= "concept-description"><p>Object Oriented Programming (OOP) is a programming language that is based on objects which can be applied in a modular fashion. Objects are data structures that contain data.  A programmer is able to manipulate objects and identify how they relate to each other.  They are arranged in a hierarchy where a single object can be used in many different but related ways. One example is the fish vs salmon lesson.  Salmon is an object (or instance) of the class fish. There are many types of fish, salmon is just one type. A specific fish, Mary, is an object as well; Mary is an object of the class salmon.</p><p>Instances are also known as objects.  An object is one instance of a class. Each distinct logic sequence, or programmed procedure, is known as a method.  There can be more than one method per object or class.  And each method only has access to the data within it's object.</p><p>OOP uses modules which contain definitions and statements.  There are built-in modules that can be imported and used in Python. The Python Standard Library is a great source for modules and their definitions as well as other aspects related to Python. Another source of information for Python programmers is the Google Python Style Guide which lists language and style rules.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">OOP is a Valuable Tool</h2>
+            <div class= "concept-description"><p>OOP is diverse, it provides countless way to manipulate objects. Inheritance allows for reduced repetition in programming. Objects make for simpler programming with the ability to break the program into smaller, more manageable pieces. Security is enhanced with OOP by placing data where it is not easily accessible by the rest of the system.  Also, changes made to one object will not impact another.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Connections Made to Abstract Thinking</h2>
+            <div class= "concept-description"><p>Abstract thinking is relational, being able to think about attributes and relationships separate from the objects that have those attributes or share those relationships. Object Oriented Programming uses relationships and attributes of items. HTML and CSS do the same.  This type of thinking opens up the opportunity to group data in a way that reduces code by reusing it for similar classes, concepts, etc.</p><p>An example could be how you divide or group people.  They could be divided or grouped by age, hair color, home town, or shoe size. There are endless opportunities for relating data.  Object Oriented Programming provides a hierarchical method to organize and relate data into manageable chunks of data in a way that allows for safe and easy access.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="stage">
+    <h1 id="lesson-4">Stage 4: Intro: Allow Comments</h1>
+      <div class= "lesson">
+          <h2>Lesson 1: </h2>
+          <div class= "concept">
+            <h2 class="concept-title">Let Anyone Modify</h2>
+            <div class= "concept-description"><p>This section was about creating a webpage that allows content updates by users in a safe manner.  Security is paramount and using the escape and autoescape functions ensures that users are not able to hack into the sytem using java or html when entering data. Using Google App Engine we created a page that listed numbers in an ordered and unorderd fashion (if and for loops, FizzBuzz), validated the data entered on a form was within the parameters requested (birthday), created templates and used inheritance of the templates to minimize repeated code and made working in html simpler as the code was more readable (block content), and created a list of entries (shopping list) using block content.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Forms and Validation</h2>
+            <div class="concept-description"><p>This exercise allows a user to enter a date, their birthdate is suggested, and validated for accuracy, not that the user is supplying their actual birthday but that the date is a valid month, day and year.</p><p>Please enter your birthdate below using the correct spelling of the month, day of the month and four digit year.  For example December 06 1965.</p>
+            </div>
+            <div style="margin: 6px">
+              <h1 id="birthdate" style="background-color: #ddd; color: #888; margin: 6px height: 50px; border-radius: 20px">
+                Birthdate Request!
+              </h1>
+
+               {% block content %}
+               {% endblock %}
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

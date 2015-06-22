@@ -1,0 +1,24 @@
+application: stoked-depth-92800
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /css
+  static_dir: css 
+
+- url: /images\.ico
+  static_files: images.ico
+  upload: images\.ico
+
+- url: .*
+  script: templates.app
+
+
+
+libraries:
+- name: jinja2
+  version: latest
+- name: webapp2
+  version: latest  
