@@ -11,7 +11,6 @@ template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader (template_dir),
 	autoescape = True)
 
-
 class Handler(webapp2.RequestHandler):
   def write(self, *a, **kw):
     self.response.out.write(*a, **kw)
@@ -24,19 +23,25 @@ class Handler(webapp2.RequestHandler):
     self.write(self.render_str(template, **kw))
 
 class MainPage(Handler):
-   def write_form(self, error="", month="", day="", year=""):
+  def write_form(self, error="", user_month="", user_day="", user_year=""):
+    self.render("form.html", error=error, user_month=user_month, user_day=user_day, user_year=user_year)
     #dictionary that we pass into the form
-    self.response.out.write(form % {"error": error,  
-      "month": month, "day": day, "year": year})
-
-  def get(self):
-    self.render("form.html", user_month=user_month, user_day=user_day, user_year=user_year)
-
-  def post(self):
+    # self.response.out.write("form.html" % {"error": error,  
+    #   "month": month, "day": day, "year": year})
+  
+  # helper function define variables
+  def get_form_data(self):
     user_month = self.request.get('month')
     user_day = self.request.get('day')
     user_year = self.request.get('year')
+    return user_month, user_day, user_year 
 
+  def get(self):
+    user_month, user_day, user_year=self.get_form_data()
+    self.render("form.html", user_month=user_month, user_day=user_day, user_year=user_year)
+
+  def post(self):
+    user_month, user_day, user_year=self.get_form_data()
     month = valid_month(user_month)
     day = valid_day(user_day)
     year = valid_year(user_year)

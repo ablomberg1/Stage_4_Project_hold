@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Intro to Programming Notes</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <header>
   <div class="navigation-bar">
@@ -241,17 +241,43 @@
       </div>
     </div>
     <div class="stage">
-    <h1 id="lesson-4">Stage 4: Intro: Allow Comments</h1>
+    <h1 id="lesson-4"><h1 id="lesson-4">Stage 4: Let Anyone Modify</h1>
       <div class= "lesson">
-          <h2>Lesson 1: </h2>
+          <h2>Lesson 1: Servers</h2>
           <div class= "concept">
-            <h2 class="concept-title">Let Anyone Modify</h2>
-            <div class= "concept-description"><p>This section was about creating a webpage that allows content updates by users in a safe manner.  Security is paramount and using the escape and autoescape functions ensures that users are not able to hack into the sytem using java or html when entering data. Using Google App Engine we created a page that listed numbers in an ordered and unorderd fashion (if and for loops, FizzBuzz), validated the data entered on a form was within the parameters requested (birthday), created templates and used inheritance of the templates to minimize repeated code and made working in html simpler as the code was more readable (block content), and created a list of entries (shopping list) using block content.</p>
+            <h2 class="concept-title">Requests</h2>
+            <div class= "concept-description"><p>A client (web browser) sends a message to the server (web server) following protocal using HTTP (Hypertext Transfer Protocol). The message sent is a GET message in the form of a URL (Uniform Resource Locator).  The URL is made up of the protocol, host and path. HTTP is the protocol, www.cnn.com is a host and / is the path (another example would be /money).  The server accepts the message and runs some code. The server then responds with the contents of the requested object.</p><p>The request from your browser begins with a request line.  The request line includes the method (type of request - most common are GET and POST), path - the actual document being requested, and version of HTTP.  Since you are already connected to the host, which indicates where we are.  The path is used for making the request.</p>
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Responses</h2>
+            <div class= "concept-description"><p>The browser makes a request to the server then the server sends back a response.  The response includes a status line which is made up of the status code and reason phrase.  Headers are included in both requests and responses.  Examples are Date and Content - Type and Length</p><br><img src="images/status_codes.png" alt="List of Status Codes">
+            </div>
+          </div>
+          <div class= "concept">
+            <h2 class="concept-title">Servers</h2>
+            <div class= "concept-description"><p>The purpose of a server is to respond to HTTP requests.  Documents are requested from the client via the web browser.  Static and Dynamic responses are sent from the server.  Static requests are pre-written forms or images.  Dynamic responses are made on the fly.  Most pages on the web are built dynamicly by web applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class= "lesson">
+          <h2>Lesson 2: Validation</h2>
+          <div class= "concept">
+            <h2 class="concept-title">The Importance of Validating Input</h2>
+            <div class= "concept-description"><p>Security is paramount and using the escape and autoescape functions ensures that users are not able to hack into the sytem using java or html when entering data.  Validation is a confirmation on the server side that we received what we expected to see.  Input validation will improve a site's security. Escape is used to prevent unauthorized access by entering random text or code to alter a program. Using the escape functionality can also avoid promblems with a page that could make for a poor user experience. If the user was unable to link to the page, share or recieves an empty form.  An error may require the user to reload the page in order to resubmit a form.  These can be managed thru validation and proper coding.  A redirect would make for a nicer user experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class= "lesson">
+          <h2>Lesson 3: HTML</h2>
+          <div class= "concept">
+            <h2 class="concept-title">Templates and Abstraction</h2>
+            <div class= "concept-description"><p>HTML templates are like forms tht can be used repeatedly, ultimately reducing duplicate code.  are used to minimize repeated code and make working in html simpler as the code is more readable (block content). Template inheritance allows for reduced code. Making changes are easier when templates are used as well.</p>
             </div>
           </div>
           <div class= "concept">
             <h2 class="concept-title">Forms and Validation</h2>
-            <div class="concept-description"><p>This exercise allows a user to enter a date, their birthdate is suggested, and validated for accuracy, not that the user is supplying their actual birthday but that the date is a valid month, day and year.</p><p>Please enter your birthdate below using the correct spelling of the month, day of the month and four digit year.  For example December 06 1965.</p>
+            <div class="concept-description"><p>This exercise allows a user to enter a date; their birthdate is suggested.  The date is validated for accuracy, not that the user is supplying their actual birthday but that the date is a valid month, day and year.</p><p>Please enter your birthdate below using the correct spelling of the month, day of the month and four digit year.  For example December 06 1965.</p>
             </div>
             <div style="margin: 6px">
               <h1 id="birthdate" style="background-color: #ddd; color: #888; margin: 6px height: 50px; border-radius: 20px">
