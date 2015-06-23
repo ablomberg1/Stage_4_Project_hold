@@ -8,9 +8,8 @@ handlers:
 - url: /css
   static_dir: css 
 
-- url: /images\.ico
-  static_files: images.ico
-  upload: images\.ico
+- url: /images
+  static_dir: images
 
 - url: .*
   script: templates.app
